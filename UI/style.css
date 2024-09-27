@@ -1,0 +1,177 @@
+body {
+    background: linear-gradient(to top, #004e92, #000428);
+}
+
+html {
+    height: 100%;
+}
+
+#container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 60rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+#project-title {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    margin-top: 20px;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+h1 {
+    padding-left: 10px;
+}
+
+.level {
+    display: flex;
+    min-height: 100px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #000428;
+    font-size: larger;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#levels {
+    align-items: center;
+    min-width: 40%;
+    margin-top: 30px;
+}
+
+input {
+    width: 45px;
+    border: 0;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    padding: .1rem 0.1rem;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+#btnSaveTresholdTemp1,
+#btnSaveTresholdTemp2,
+#toggleButton,
+#btnLEd {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .700rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .13rem 0.75rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#btnSaveTresholdTemp1,
+#btnSaveTresholdTemp2,
+#toggleButton,
+#btnLEd:hover {
+    background-color: rgb(249, 250, 251);
+}
+
+#btnSaveTresholdTemp1,
+#btnSaveTresholdTemp2,
+#toggleButton,
+#btnLEd:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+#btnSaveTresholdTemp1,
+#btnSaveTresholdTemp2,
+#toggleButton,
+#btnSaveInterval,
+#btnLEd:focus-visible {
+    box-shadow: none;
+}
+
+#temeprature {
+    text-align: left;
+    line-height: 1.8;
+}
+
+#currentSpeed {
+    background-color: #84a1b8;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#messageContainerDiv {
+    top: 10px;
+    right: 10px;
+    position: fixed;
+    width: 350px;
+}
+
+.messageSuccess {
+    color: white;
+    background-color: #5bc373;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.messageError {
+    color: white;
+    background-color: #c35b5b;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    margin-right: 10px;
+}

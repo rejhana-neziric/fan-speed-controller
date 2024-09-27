@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="project-title">
+            <img class="rotate" width="45" height="45" src="/assets/fan.png">
+            <h1>Fan Speed Controller</h1>
+        </div>
+
+        <div id="temeprature">
+            <div class="toggle-container">
+                <label class="toggle-label">Fan:</label>
+                <button id="toggleButton">OFF</button>
+            </div>
+            <div>
+                <label>Current temperature: </label>
+                <input type="text" id="currentTemperature">
+            </div>
+            <div>
+                <label>Temperature treshold 1: </label>
+                <input type="text" id="tresholdTemp1">
+                <button id="btnSaveTresholdTemp1">Save</button>
+
+            </div>
+            <div>
+                <label>Temperature treshold 2: </label>
+                <input type="text" id="tresholdTemp2">
+                <button id="btnSaveTresholdTemp2">Save</button>
+            </div>
+        </div>
+
+        <div id="levels">
+            <h3>Fan speed</h3>
+            <div class="level" id="speed1">
+                <span>Low</span>
+            </div>
+            <div class="level" id="speed2">
+                <span>Mid</span>
+            </div>
+            <div class="level" id="speed3">
+                <span>Max</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+
+</html>
